@@ -325,7 +325,7 @@
     <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
     <script>
-      let navState = false;
+      let navState = true;
       function toggleNav() {
         navState = !navState;
 
@@ -335,6 +335,8 @@
           document.getElementById("navbarId").style.display = "none";
         }
       }
+
+      toggleNav();
     </script>
   </body>
 </html>

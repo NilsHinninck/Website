@@ -549,7 +549,7 @@ img {
 
 @media (max-width: 550px) {
   .navbar-nav {
-    display: none;
+    display: block !important;
     font-size: 16px;
     flex-direction: column;
   }
@@ -578,9 +578,8 @@ img {
   }
 }
 
-.fab {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-left: 195px;
+.fa-facebook {
+  margin: 0 auto;
+  display: block !important;
+  width: fit-content;
 }
