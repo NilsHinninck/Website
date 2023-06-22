@@ -36,7 +36,7 @@ body {
 
 /* Header */
 .header-content {
-	background-image: url(img/BG_Img.webp);
+	background-image: url(img/bg_img.webp);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -510,7 +510,7 @@ img {
 	padding: 0;
 }
 
-.video>div {
+.video > div {
 	width: 50%;
 	text-align: center;
 }
@@ -556,7 +556,7 @@ img {
 		flex-wrap: wrap;
 	}
 
-	.video>div {
+	.video > div {
 		width: 100%;
 	}
 
