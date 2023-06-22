@@ -1,108 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Assist</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css" />
+        <title>Assist</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap-grid.min.css"
-      integrity="sha512-EAgFb1TGFSRh1CCsDotrqJMqB2D+FLCOXAJTE16Ajphi73gQmfJS/LNl6AsjDqDht6Ls7Qr1KWsrJxyttEkxIA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
-      <div class="nav">
-        <a href="index.html">
-          <img src="img/logo.png" alt="" class="logo" id="" />
-        </a>
-        <button
-          onClick="toggleNav()"
-          class="navbar-toggler"
-          type="button"
-          aria-controls="navbarId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="hamburger"><i class="fas fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarId">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">home</a>
-            </li>
-            <li class="nav-item"><a href="#about" class="nav-link">Over</a></li>
-            <li class="nav-item">
-              <a href="#Work" class="nav-link">Gallerij</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Videos" class="nav-link">Videos</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header id="home">
-      <div class="header-content">
-        <div class="row">
-          <div class="col text-center">
-            <div class="content-box">
-              <h1 class="title">Assist</h1>
-              <p class="oneliner">
-                Iedereen kan spelen <br />
-                als een pro
-              </p>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap-grid.min.css"
+            integrity="sha512-EAgFb1TGFSRh1CCsDotrqJMqB2D+FLCOXAJTE16Ajphi73gQmfJS/LNl6AsjDqDht6Ls7Qr1KWsrJxyttEkxIA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
+            <div class="nav">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="" class="logo" id="" />
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">home</a>
+                    </li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Over</a></li>
+                    <li class="nav-item">
+                        <a href="#Work" class="nav-link">Gallerij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Videos" class="nav-link">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <button onClick="toggleNav()" class="navbar-toggler" type="button">
+                    <span class="hamburger"><i class="fas fa-bars"></i></span>
+                </button>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
+            <div id="navbarId">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">home</a>
+                    </li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Over</a></li>
+                    <li class="nav-item">
+                        <a href="#Work" class="nav-link">Gallerij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Videos" class="nav-link">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <section class="about m-5 wow fadeInLeft" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="img/balling.jpg" class="balling" alt="balls" />
-          </div>
-          <div class="col-lg-6 pl-5 about-flex">
-            <h2>Over</h2>
-            <p>
-              Assist staat voor het helpen van kansarme jongeren, vooral
-              financieel bij het inschrijven bij een voetbalclub of met kleding
-              te kopen die ze tijdens de trainingen en wedstrijden kunnen
-              dragen.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <header id="home">
+            <div class="header-content">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="content-box">
+                            <h1 class="title">Assist</h1>
+                            <p class="oneliner">
+                                Iedereen kan spelen <br />
+                                als een pro
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <div id="Work">
-      <h2>Gallerij</h2>
-    </div>
-    <div
-      id="ngy2p"
-      data-nanogallery2='{
+        <section class="about m-5 wow fadeInLeft" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/balling.jpg" class="balling" alt="balls" />
+                    </div>
+                    <div class="col-lg-6 pl-5 about-flex">
+                        <h2>Over</h2>
+                        <p>
+                            Assist staat voor het helpen van kansarme jongeren, vooral financieel bij het inschrijven bij een voetbalclub of met kleding te kopen die ze tijdens de trainingen en
+                            wedstrijden kunnen dragen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="Work">
+            <h2>Gallerij</h2>
+        </div>
+        <div
+            id="ngy2p"
+            data-nanogallery2='{
     "itemsBaseURL": "",
     "thumbnailWidth": "200",
     "thumbnailHeight": "auto",
@@ -116,229 +118,126 @@
     "galleryFilterTags": true,
     "thumbnailOpenImage": true
   }'
-    >
-      <a
-        href="img/handschoen.jpg"
-        data-ngthumb="img/handschoen.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/contract.jpg"
-        data-ngthumb="img/contract.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/lege zak.jpg"
-        data-ngthumb="img/lege zak.jpg"
-        data-ngdesc=""
-      ></a>
-      <a href="img/Cash.jpg" data-ngthumb="img/Cash.jpg" data-ngdesc=""></a>
-      <a
-        href="img/Shirtje.jpg"
-        data-ngthumb="img/Shirtje.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/ankleshoe-min.JPG"
-        data-ngthumb="img/ankleshoe-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/ball-min.JPG"
-        data-ngthumb="img/ball-min.JPG"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/drinks-min.JPG"
-        data-ngthumb="img/drinks-min.JPG"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/ballshoot-min.JPG"
-        data-ngthumb="img/ballshoot-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a href="img/goal.jpg" data-ngthumb="img/goal.jpg" data-ngdesc=""></a>
-      <a
-        href="img/kneesock-min.JPG"
-        data-ngthumb="img/kneesock-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/kous-min.JPG"
-        data-ngthumb="img/kous-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/netrest-min.JPG"
-        data-ngthumb="img/netrest-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/outfit-min.JPG"
-        data-ngthumb="img/outfit-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/portefeuille-min.JPG"
-        data-ngthumb="img/portefeuille-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/run2ball-min.JPG"
-        data-ngthumb="img/run2ball-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/shirtless-min.JPG"
-        data-ngthumb="img/shirtless-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/shirts-min.JPG"
-        data-ngthumb="img/shirts-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/shoesnball-min.JPG"
-        data-ngthumb="img/shoesnball-min.jpg"
-        data-ngdesc=""
-      ></a>
-      <a
-        href="img/shoetie-min.JPG"
-        data-ngthumb="img/shoetie-min.jpg"
-        data-ngdesc=""
-      ></a>
-    </div>
-
-    <div id="Videos">
-      <h2>Videos</h2>
-    </div>
-    <div class="container">
-      <div class="video">
-        <div class="TekstVak">
-          <h2 class="videotitel">Typo animatie</h2>
-          <p class="tekst">
-            Dit is mijn typo animatie. Ik heb gekozen voor het liedje Jaloers
-            van Simski en Lil Flame, dit zijn de artiestennamen van Simen
-            Scheers en Shayanth Ravi die hier ook op school de richting
-            Multimedia gevolgd hebben. Ik heb dit liedje gekozen omdat het gaat
-            over jaloers te zijn op wat iemand heeft en over veel geld te willen
-            hebben. Ook dat ze dat op een dag allemaal gaan hebben en dat ze hun
-            dromen gaan halen.
-          </p>
-        </div>
-        <div class="videoFrame">
-          <iframe
-            src="https://player.vimeo.com/video/835550029?h=2a433b03e7"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <div style="height: 50px"></div>
-    <div class="container">
-      <div class="video video2">
-        <div class="videoFrame">
-          <iframe
-            src="https://player.vimeo.com/video/835925944?h=e97f5bf777"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
+        >
+            <a href="img/handschoen.jpg" data-ngthumb="img/handschoen.jpg" data-ngdesc=""></a>
+            <a href="img/contract.jpg" data-ngthumb="img/contract.jpg" data-ngdesc=""></a>
+            <a href="img/lege zak.jpg" data-ngthumb="img/lege zak.jpg" data-ngdesc=""></a>
+            <a href="img/Cash.jpg" data-ngthumb="img/Cash.jpg" data-ngdesc=""></a>
+            <a href="img/Shirtje.jpg" data-ngthumb="img/Shirtje.jpg" data-ngdesc=""></a>
+            <a href="img/ankleshoe-min.JPG" data-ngthumb="img/ankleshoe-min.jpg" data-ngdesc=""></a>
+            <a href="img/ball-min.JPG" data-ngthumb="img/ball-min.JPG" data-ngdesc=""></a>
+            <a href="img/drinks-min.JPG" data-ngthumb="img/drinks-min.JPG" data-ngdesc=""></a>
+            <a href="img/ballshoot-min.JPG" data-ngthumb="img/ballshoot-min.jpg" data-ngdesc=""></a>
+            <a href="img/goal.jpg" data-ngthumb="img/goal.jpg" data-ngdesc=""></a>
+            <a href="img/kneesock-min.JPG" data-ngthumb="img/kneesock-min.jpg" data-ngdesc=""></a>
+            <a href="img/kous-min.JPG" data-ngthumb="img/kous-min.jpg" data-ngdesc=""></a>
+            <a href="img/netrest-min.JPG" data-ngthumb="img/netrest-min.jpg" data-ngdesc=""></a>
+            <a href="img/outfit-min.JPG" data-ngthumb="img/outfit-min.jpg" data-ngdesc=""></a>
+            <a href="img/portefeuille-min.JPG" data-ngthumb="img/portefeuille-min.jpg" data-ngdesc=""></a>
+            <a href="img/run2ball-min.JPG" data-ngthumb="img/run2ball-min.jpg" data-ngdesc=""></a>
+            <a href="img/shirtless-min.JPG" data-ngthumb="img/shirtless-min.jpg" data-ngdesc=""></a>
+            <a href="img/shirts-min.JPG" data-ngthumb="img/shirts-min.jpg" data-ngdesc=""></a>
+            <a href="img/shoesnball-min.JPG" data-ngthumb="img/shoesnball-min.jpg" data-ngdesc=""></a>
+            <a href="img/shoetie-min.JPG" data-ngthumb="img/shoetie-min.jpg" data-ngdesc=""></a>
         </div>
 
-        <div>
-          <h2 class="videotitel">Gip Video</h2>
-          <p class="tekst">
-            Ik heb gekozen voor het maken van een documentaire, hiervoor heb ik
-            Cédric Van As een paar vragen gesteld over wat voetbal voor hem
-            betekent en betekent heeft, hij legt uit over hoe moeilijk hij het
-            vroeger had langs zijn mama's kant om rond te komen en wat hij dan
-            allemaal deed. Hij praat over waarom het zijn passie is en wie zijn
-            voorbeelden zijn etc. We zien hem vooral trainen op de voetbal en
-            plezier maken met zijn vrienden.
-          </p>
+        <div id="Videos">
+            <h2>Videos</h2>
         </div>
-      </div>
-    </div>
+        <div class="container">
+            <div class="video">
+                <div class="TekstVak">
+                    <h2 class="videotitel">Typo animatie</h2>
+                    <p class="tekst">
+                        Dit is mijn typo animatie. Ik heb gekozen voor het liedje Jaloers van Simski en Lil Flame, dit zijn de artiestennamen van Simen Scheers en Shayanth Ravi die hier ook op school
+                        de richting Multimedia gevolgd hebben. Ik heb dit liedje gekozen omdat het gaat over jaloers te zijn op wat iemand heeft en over veel geld te willen hebben. Ook dat ze dat op
+                        een dag allemaal gaan hebben en dat ze hun dromen gaan halen.
+                    </p>
+                </div>
+                <div class="videoFrame">
+                    <iframe src="https://player.vimeo.com/video/835550029?h=2a433b03e7" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div style="height: 50px"></div>
+        <div class="container">
+            <div class="video video2">
+                <div class="videoFrame">
+                    <iframe src="https://player.vimeo.com/video/835925944?h=e97f5bf777" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
 
-    <div class="body" id="Contact">
-      <h2 class="contact-title">Contacteer ons</h2>
-
-      <form action="contact.php" method="POST">
-        <label for="name">Naam:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="password">E-mail:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Bericht:</label>
-        <textarea id="message" name="message"></textarea>
-        <a
-          href="https://www.facebook.com/profile.php?id=100093561162704"
-          target="_blank"
-          class="fab fa-facebook"
-          style="color: #ef7a14"
-        ></a>
-
-        <div id="successMessage" class="success-message" style="display: none">
-          Message send successful
+                <div>
+                    <h2 class="videotitel">Gip Video</h2>
+                    <p class="tekst">
+                        Ik heb gekozen voor het maken van een documentaire, hiervoor heb ik Cédric Van As een paar vragen gesteld over wat voetbal voor hem betekent en betekent heeft, hij legt uit
+                        over hoe moeilijk hij het vroeger had langs zijn mama's kant om rond te komen en wat hij dan allemaal deed. Hij praat over waarom het zijn passie is en wie zijn voorbeelden
+                        zijn etc. We zien hem vooral trainen op de voetbal en plezier maken met zijn vrienden.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <input type="submit" value="Verzenden" />
-        <input class="wissen" type="reset" value="wissen" />
-      </form>
-    </div>
+        <div class="body" id="Contact">
+            <h2 class="contact-title">Contacteer ons</h2>
 
-    <div id="successMessage" class="success-message" style="display: none">
-      Bericht succesvol verzonden!
-    </div>
+            <form action="contact.php" method="POST">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required />
 
-    <script>
-      const form = document.querySelector("form");
-      const successMessage = document.getElementById("successMessage");
+                <label for="password">E-mail:</label>
+                <input type="email" id="email" name="email" required />
 
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message"></textarea>
+                <a href="https://www.facebook.com/profile.php?id=100093561162704" target="_blank" class="fab fa-facebook" style="color: #ef7a14"></a>
 
-        // Handle the form submission here, for example, using AJAX
+                <div id="successMessage" class="success-message" style="display: none">Message send successful</div>
 
-        // Show success message
-        successMessage.style.display = "block";
+                <input type="submit" value="Verzenden" />
+                <input class="wissen" type="reset" value="wissen" />
+            </form>
+        </div>
 
-        // Reset the form
-        form.reset();
-      });
-    </script>
+        <div id="successMessage" class="success-message" style="display: none">Bericht succesvol verzonden!</div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+        <script>
+            const form = document.querySelector("form");
+            const successMessage = document.getElementById("successMessage");
 
-    <script>
-      let navState = false;
-      function toggleNav() {
-        navState = !navState;
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
 
-        if (navState && screen.width > 375) {
-          document.getElementById("navbarId").style.display = "block";
-        } else {
-          document.getElementById("navbarId").style.display = "none";
-        }
-      }
-    </script>
-  </body>
+                // Handle the form submission here, for example, using AJAX
+
+                // Show success message
+                successMessage.style.display = "block";
+
+                // Reset the form
+                form.reset();
+            });
+        </script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+        <script>
+            let navState = false;
+            function toggleNav() {
+                navState = !navState;
+
+                if (navState && screen.width > 375) {
+                    document.getElementById("navbarId").style.display = "block";
+                } else {
+                    document.getElementById("navbarId").style.display = "none";
+                }
+            }
+        </script>
+    </body>
 </html>
 
 <script src="https://player.vimeo.com/api/player.js"></script>
