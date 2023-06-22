@@ -176,6 +176,7 @@ body {
 	padding: 0 20px;
 	display: flex;
 	width: 50%;
+	overflow-x: hidden;
 }
 
 .text-center {
@@ -508,6 +509,8 @@ img {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+	max-width: 100%;
 }
 
 .video > div {
@@ -521,7 +524,7 @@ img {
 }
 
 .video iframe {
-	width: 100%;
+	width: calc(100% - 20px);
 	aspect-ratio: 16/9;
 }
 
@@ -562,6 +565,10 @@ img {
 
 	.video2 {
 		flex-wrap: wrap-reverse;
+	}
+
+	.container {
+		max-width: calc(100% - 30px);
 	}
 }
 
