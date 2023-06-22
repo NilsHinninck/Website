@@ -17,9 +17,9 @@ body {
 	background-color: unset;
 	border: none;
 	outline: none;
+	display: none;
+	font-size: 24px;
 	cursor: pointer;
-	float: right;
-	margin-top: 30px;
 }
 
 .nav-item a {
@@ -36,7 +36,7 @@ body {
 
 /* Header */
 .header-content {
-	background-image: url(img/BG_Img.jpg);
+	background-image: url(img/BG_Img.webp);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -103,7 +103,7 @@ body {
 .nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 10px;
+	padding: 0 25px;
 }
 
 .player {
@@ -255,15 +255,6 @@ body {
 	backdrop-filter: blur(10px);
 }
 
-.navbar-toggler {
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-	transition: transform 0.3s ease-in-out;
-	display: none;
-	/* Hide by default */
-}
-
 .hamburger {
 	display: flex;
 	align-items: center;
@@ -336,13 +327,9 @@ body {
 	transform: scaleX(1);
 }
 
-/* Media Query for 375px and below */
 @media (max-width: 550px) {
 	.navbar-toggler {
 		display: block;
-		/* Show the hamburger icon */
-		position: absolute;
-		right: 30px;
 	}
 
 	.navbar-nav {
@@ -546,12 +533,6 @@ img {
 	background-color: #0000005e !important;
 }
 
-@media (min-width: 550px) {
-	.navbar-toggler {
-		display: none;
-	}
-}
-
 @media (max-width: 550px) {
 	.navbar-nav {
 		display: none !important;
@@ -602,4 +583,9 @@ img {
 
 #navbarId a {
 	text-decoration: none;
+}
+
+.footer {
+	text-align: center;
+	margin: 30px 0;
 }
